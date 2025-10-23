@@ -1,0 +1,2190 @@
+{
+  "active": true,
+  "brand": "# Madara’s Automation Library    ## Story   I build systems that make work lighter. Too many teams waste time on repetitive tasks or scattered tools. This library offers reusable n8n workflows — tested in production and documented for clarity.    ## Mission   Workflows that:   - Cut manual work   - Save 5–10 hours weekly   - Adapt without coding    ## Values   - **Clarity**: Plain docs, minimal jargon   - **Reusability**: Modular, remixable   - **Transparency**: Assumptions explained   - **Pragmatism**: Reliable in production   - **Open Sharing**: Free workflows, paid support    ## Personality   **The Practical Architect** – direct, approachable, solution-focused.    ## Visuals   - **Style**: Minimal Markdown   - **Icons**: ⚡ triggers, 🔄 loops, 🛠 integrations   - **Feel**: Clear, professional    ## Voice   Direct, instructional, with personality.   - **Tutorials**: Step-by-step   - **Notes**: Concise, factual   - **Consulting**: Confident, actionable    ## Key Messages   1. Workflows proven in production   2. Save hours with tested automations   3. Clear for non-technical users    ## Audience   - Solopreneurs, small teams   - NGOs, startups   - Consultants, operators    ## Promise   Plug-and-play workflows delivering results fast.    ## Differentiators   - Broad tool coverage   - Docs-first, not one-offs   - Mix of AI + core ops   - Honest about limits    ## Guidelines   **DO**: Step-by-step docs, real examples, diagrams.   **DON’T**: Untested flows, jargon, overcomplication.    ## Contact   **Author**: Madara Knutina   **Email**: madara.knutina@gmail.com   **LinkedIn**: [linkedin.com/in/madaraknutina](https://www.linkedin.com/in/madaraknutina/)   **Consulting**: On request    ---   *Automation you can actually reuse — for operators, NGOs, and founders needing leverage without headcount.*  ",
+  "connections": {
+    "Telegram Trigger": {
+      "main": [
+        [
+          {
+            "node": "Filter",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Filter": {
+      "main": [
+        [
+          {
+            "node": "Switch",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Switch": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Filter1",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Filter2",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "AI Agent1",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Get Completed",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Structured Output Parser": {
+      "ai_outputParser": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_outputParser",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent": {
+      "main": [
+        [
+          {
+            "node": "Get many database pages",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get many database pages": {
+      "main": [
+        [
+          {
+            "node": "If",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If": {
+      "main": [
+        [
+          {
+            "node": "Send a text message",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Create a database page",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Create a database page": {
+      "main": [
+        [
+          {
+            "node": "Send a text message1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get many database pages1": {
+      "main": [
+        [
+          {
+            "node": "Update a database page1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Send message and wait for response": {
+      "main": [
+        [
+          {
+            "node": "Switch1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Switch1": {
+      "main": [
+        [
+          {
+            "node": "Get many database pages1",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Update a database page3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Update a database page1": {
+      "main": [
+        [
+          {
+            "node": "Send message and wait for response",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Calculate Week": {
+      "main": [
+        []
+      ]
+    },
+    "Get many database pages4": {
+      "main": [
+        [
+          {
+            "node": "If1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Send message and wait for response1": {
+      "main": [
+        [
+          {
+            "node": "Update a database page2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Update a database page2": {
+      "main": [
+        [
+          {
+            "node": "Send a text message2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If1": {
+      "main": [
+        [
+          {
+            "node": "Send message and wait for response1",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Send a text message3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model1": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent1",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Structured Output Parser1": {
+      "ai_outputParser": [
+        [
+          {
+            "node": "AI Agent1",
+            "type": "ai_outputParser",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent1": {
+      "main": [
+        [
+          {
+            "node": "Search tracks by keyword",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Search tracks by keyword": {
+      "main": [
+        [
+          {
+            "node": "Add an Item to a playlist",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Add an Item to a playlist": {
+      "main": [
+        [
+          {
+            "node": "Send message and wait for response2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Send message and wait for response2": {
+      "main": [
+        [
+          {
+            "node": "Switch2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Switch2": {
+      "main": [
+        [
+          {
+            "node": "AI Agent2",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Send a text message4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model3": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent2",
+            "type": "ai_languageModel",
+            "index": 0
+          },
+          {
+            "node": "Structured Output Parser3",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Create a database page1": {
+      "main": [
+        [
+          {
+            "node": "Send a text message6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get many database pages5": {
+      "main": [
+        [
+          {
+            "node": "If2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If2": {
+      "main": [
+        [
+          {
+            "node": "Update a database page4",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Create a database page1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent2": {
+      "main": [
+        [
+          {
+            "node": "Get many database pages5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Structured Output Parser3": {
+      "ai_outputParser": [
+        [
+          {
+            "node": "AI Agent2",
+            "type": "ai_outputParser",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Completed": {
+      "main": [
+        [
+          {
+            "node": "Get Queued",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Queued": {
+      "main": [
+        [
+          {
+            "node": "Analyze Completed and Queued",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Analyze Completed and Queued": {
+      "main": [
+        [
+          {
+            "node": "Send a text message7",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Update a database page3": {
+      "main": [
+        [
+          {
+            "node": "Send a text message8",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get many database pages2": {
+      "main": [
+        [
+          {
+            "node": "Update a database page",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Send a text message8": {
+      "main": [
+        [
+          {
+            "node": "Get many database pages2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Update a database page4": {
+      "main": [
+        [
+          {
+            "node": "Send a text message5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Filter1": {
+      "main": [
+        [
+          {
+            "node": "Get many database pages1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Filter2": {
+      "main": [
+        [
+          {
+            "node": "Get many database pages4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "createdAt": "2025-10-07T08:29:23.112Z",
+  "id": "bSumYuqwHlxucP5e",
+  "isArchived": false,
+  "meta": {
+    "templateCredsSetupCompleted": true
+  },
+  "name": "MT Mixtape",
+  "nodes": [
+    {
+      "parameters": {
+        "updates": [
+          "message",
+          "edited_message"
+        ],
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.telegramTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        912
+      ],
+      "id": "d29a441b-5ced-4f2d-a6f1-d6aa3df4ffd1",
+      "name": "Telegram Trigger",
+      "webhookId": "6d0747ea-25a0-4619-93b0-6a51edf6bd23",
+      "credentials": {
+        "telegramApi": {
+          "id": "2qisne1lvc71iQ7u",
+          "name": "MT Mixtape Bot"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "loose",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "1010f805-b522-49d8-8c22-876f7bf9f879",
+              "leftValue": "={{ $json.message.from.id }}",
+              "rightValue": "287386233",
+              "operator": {
+                "type": "string",
+                "operation": "equals",
+                "name": "filter.operator.equals"
+              }
+            },
+            {
+              "id": "ec499c7b-8087-4c07-83b5-b8e5e947fe76",
+              "leftValue": "={{ $json.message.from.id }}",
+              "rightValue": "194884321",
+              "operator": {
+                "type": "string",
+                "operation": "equals",
+                "name": "filter.operator.equals"
+              }
+            }
+          ],
+          "combinator": "or"
+        },
+        "looseTypeValidation": "={{ true }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.filter",
+      "typeVersion": 2.2,
+      "position": [
+        224,
+        912
+      ],
+      "id": "45d770c2-c518-4dd0-8941-4af5f4cfa569",
+      "name": "Filter",
+      "disabled": true
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{ $json.message.text }}",
+                    "rightValue": "/artist",
+                    "operator": {
+                      "type": "string",
+                      "operation": "startsWith"
+                    },
+                    "id": "2827f641-7490-479f-b27a-3add126ff8d6"
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Add artist"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "652d48bf-ace5-41a0-a2ed-b28314e1c42d",
+                    "leftValue": "={{ $('Telegram Trigger').item.json.message.text }}",
+                    "rightValue": "/next",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Next"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "60fb1ca3-f1cc-45ef-b4a5-8d072658babb",
+                    "leftValue": "={{ $json.message.text }}",
+                    "rightValue": "/done",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Done"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "1186747a-fde5-4fcd-9b8b-59e580bd4d2b",
+                    "leftValue": "={{ $json.message.text }}",
+                    "rightValue": "/song",
+                    "operator": {
+                      "type": "string",
+                      "operation": "startsWith"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Add song"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "a9435111-ba3e-436a-9c2b-d7268c5aac8c",
+                    "leftValue": "={{ $json.message.text }}",
+                    "rightValue": "/stats",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Stats"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.2,
+      "position": [
+        448,
+        864
+      ],
+      "id": "25f2351b-08ff-4b76-8f4e-148f3f629402",
+      "name": "Switch"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "=You are a music expert helping build a music discovery database. Extract the artist name from the user's message and provide essential information.\n\nUser message: \"{{ $json.message.text }}\"\n\nIMPORTANT: \n- The user may misspell artist names. Use your knowledge to find the most likely correct artist.\n- Look for phrases like \"shared by X\", \"suggested by Y\", \"from Z\", \"recommended by W\" - extract that person's name if present.\n- If no submitter is mentioned, return null for submitted_by.\n- Remove command prefixes like \"/add\" from extraction.\n\nRespond in this EXACT JSON format (no markdown, no ```json blocks, just raw JSON):\n{\n  \"artist_name\": \"Correctly spelled artist name\",\n  \"summary\": \"2-3 sentence overview of who they are and why they matter in music history\",\n  \"key_songs\": \"Song 1 (context), Song 2 (context), Song 3 (context)\",\n  \"genres\": [\"Primary Genre\", \"Secondary Genre\"],\n  \"submitted_by\": \"Extracted name if mentioned, or null if not mentioned\"\n}\n\nExamples:\n- \"/add Joni Mitchell, shared by MJ mum\" → submitted_by: \"MJ mum\"\n- \"/add The Beatles from Sarah\" → submitted_by: \"Sarah\"  \n- \"/add Radiohead suggested by Tom\" → submitted_by: \"Tom\"\n- \"/add Miles Davis\" → submitted_by: null\n\nRules:\n- Be forgiving with spelling\n- Focus on cultural significance\n- Keep it accessible and concise",
+        "hasOutputParser": true,
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 2.2,
+      "position": [
+        672,
+        -80
+      ],
+      "id": "17174bdd-1bf0-4f92-b2a0-b85777cbb008",
+      "name": "AI Agent"
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "mode": "list",
+          "value": "gpt-4.1-mini"
+        },
+        "options": {
+          "maxTokens": 500,
+          "temperature": 0.3
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        688,
+        144
+      ],
+      "id": "52716673-eac7-436f-9044-460e18e87a8b",
+      "name": "OpenAI Chat Model",
+      "credentials": {
+        "openAiApi": {
+          "id": "hLGZwWWhfKyonDmV",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsonSchemaExample": "{\n  \"artist_name\": \"Joni Mitchell\",\n  \"summary\": \"Canadian singer-songwriter who revolutionized folk music in the 1960s-70s with poetic lyrics and innovative guitar tunings. Known for confessional songwriting style and albums like Blue and Court and the Spark. Influenced generations of artists across multiple genres.\",\n  \"key_songs\": \"Big Yellow Taxi (environmental anthem, 1970), A Case of You (intimate love song from Blue, 1971), Both Sides Now (reflective masterpiece covered by hundreds of artists, 1969)\",\n  \"genres\": [\"Folk\", \"Singer-Songwriter\", \"Jazz\"],\n  \"submitted_by\": null\n}"
+      },
+      "type": "@n8n/n8n-nodes-langchain.outputParserStructured",
+      "typeVersion": 1.3,
+      "position": [
+        816,
+        144
+      ],
+      "id": "7e8cc958-0675-44c9-b084-8368479bc5e8",
+      "name": "Structured Output Parser"
+    },
+    {
+      "parameters": {
+        "resource": "databasePage",
+        "databaseId": {
+          "__rl": true,
+          "value": "e04e1510-ec9c-47eb-9923-8ec68d1dd89c",
+          "mode": "list",
+          "cachedResultName": "Artists",
+          "cachedResultUrl": "https://www.notion.so/e04e1510ec9c47eb99238ec68d1dd89c"
+        },
+        "propertiesUi": {
+          "propertyValues": [
+            {
+              "key": "Artist Name|title",
+              "title": "={{ $('AI Agent').item.json.output.artist_name }}"
+            },
+            {
+              "key": "Genre|multi_select",
+              "multiSelectValue": "={{ $('AI Agent').item.json.output.genres }}"
+            },
+            {
+              "key": "Key Songs|rich_text",
+              "textContent": "={{ $('AI Agent').item.json.output.key_songs }}"
+            },
+            {
+              "key": "Summary|rich_text",
+              "textContent": "={{ $('AI Agent').item.json.output.summary }}"
+            },
+            {
+              "key": "Submitted By|rich_text",
+              "textContent": "={{ $('Telegram Trigger').item.json.message.from.username }}"
+            },
+            {
+              "key": "Status|select",
+              "selectValue": "Queue"
+            },
+            {
+              "key": "Submitted By|rich_text",
+              "textContent": "={{ $json.submitted_by || $('Telegram Trigger').item.json.message.from.first_name }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.notion",
+      "typeVersion": 2.2,
+      "position": [
+        1472,
+        128
+      ],
+      "id": "356363d6-6ba8-452d-82d8-877af84c7585",
+      "name": "Create a database page",
+      "credentials": {
+        "notionApi": {
+          "id": "Le14daOJ7uGb7rMb",
+          "name": "MK Private"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "databasePage",
+        "operation": "getAll",
+        "databaseId": {
+          "__rl": true,
+          "value": "e04e1510-ec9c-47eb-9923-8ec68d1dd89c",
+          "mode": "list",
+          "cachedResultName": "Artists",
+          "cachedResultUrl": "https://www.notion.so/e04e1510ec9c47eb99238ec68d1dd89c"
+        },
+        "limit": 1,
+        "filterType": "manual",
+        "filters": {
+          "conditions": [
+            {
+              "key": "Artist Name|title",
+              "condition": "equals",
+              "titleValue": "={{ $json.output.artist_name }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.notion",
+      "typeVersion": 2.2,
+      "position": [
+        1024,
+        32
+      ],
+      "id": "e3bf617e-ee29-4a6d-9e88-724c602f4a15",
+      "name": "Get many database pages",
+      "alwaysOutputData": true,
+      "credentials": {
+        "notionApi": {
+          "id": "Le14daOJ7uGb7rMb",
+          "name": "MK Private"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "loose",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "dc7d6c6f-0d4f-4419-9ffd-be8e240d5949",
+              "leftValue": "={{ Boolean($('Get many database pages').first().json.id) }}",
+              "rightValue": {},
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "looseTypeValidation": true,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        1248,
+        32
+      ],
+      "id": "ef06847a-94cc-4a0c-a33e-1f86300800c1",
+      "name": "If"
+    },
+    {
+      "parameters": {
+        "chatId": "={{ $('Telegram Trigger').item.json.message.chat.id }}",
+        "text": "Already exists! 🫤",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        1472,
+        -80
+      ],
+      "id": "eabe103f-5d3b-41b8-85ff-7c7be29afc45",
+      "name": "Send a text message",
+      "webhookId": "55f5a75d-7bd1-44fb-b902-052a34679d29",
+      "credentials": {
+        "telegramApi": {
+          "id": "2qisne1lvc71iQ7u",
+          "name": "MT Mixtape Bot"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "chatId": "={{ $('Telegram Trigger').item.json.message.chat.id }}",
+        "text": "={{ $json.name }} added to mixtape!✅",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        1696,
+        128
+      ],
+      "id": "19f64d18-8143-441b-8952-584dd4af6b26",
+      "name": "Send a text message1",
+      "webhookId": "4a76ca53-e61a-412a-bda5-94b9f355e956",
+      "credentials": {
+        "telegramApi": {
+          "id": "2qisne1lvc71iQ7u",
+          "name": "MT Mixtape Bot"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "databasePage",
+        "operation": "getAll",
+        "databaseId": {
+          "__rl": true,
+          "value": "e04e1510-ec9c-47eb-9923-8ec68d1dd89c",
+          "mode": "list",
+          "cachedResultName": "Artists",
+          "cachedResultUrl": "https://www.notion.so/e04e1510ec9c47eb99238ec68d1dd89c"
+        },
+        "limit": 1,
+        "filterType": "manual",
+        "filters": {
+          "conditions": [
+            {
+              "key": "Status|select",
+              "condition": "equals",
+              "selectValue": "Queue"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.notion",
+      "typeVersion": 2.2,
+      "position": [
+        1024,
+        1376
+      ],
+      "id": "b6f624c5-da4e-4cf4-873b-2fefab19f14a",
+      "name": "Get many database pages1",
+      "alwaysOutputData": true,
+      "credentials": {
+        "notionApi": {
+          "id": "Le14daOJ7uGb7rMb",
+          "name": "MK Private"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "sendAndWait",
+        "chatId": "={{ $('Telegram Trigger').item.json.message.chat.id }}",
+        "message": "=This week's artist is {{$json.name}}. 🎵\n\nGenre: {{ $json.property_genre }}\n\n{{$json.property_summary}}\n\nKey songs: {{$json.property_key_songs}}\n\n📻 Do you want to pick {{ $json.name }} this week?",
+        "approvalOptions": {
+          "values": {
+            "approvalType": "double",
+            "approveLabel": "✅ Pick this artist",
+            "disapproveLabel": "❌ Get a new artist"
+          }
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        1472,
+        1312
+      ],
+      "id": "5df1a15d-58b1-42d6-b874-1674f6ca18e3",
+      "name": "Send message and wait for response",
+      "webhookId": "c998c515-9690-42af-bcc3-f4d151870190",
+      "credentials": {
+        "telegramApi": {
+          "id": "2qisne1lvc71iQ7u",
+          "name": "MT Mixtape Bot"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "loose",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{ $json.data.approved }}",
+                    "rightValue": false,
+                    "operator": {
+                      "type": "boolean",
+                      "operation": "equals"
+                    },
+                    "id": "b2de221f-1f7b-421c-8171-c3f4ae4d6ab8"
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Shuffle"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "loose",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "ae2d6326-5b9b-41b5-b9ec-895541736c44",
+                    "leftValue": "={{ $json.data.approved }}",
+                    "rightValue": true,
+                    "operator": {
+                      "type": "boolean",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Play"
+            }
+          ]
+        },
+        "looseTypeValidation": true,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.2,
+      "position": [
+        1696,
+        1376
+      ],
+      "id": "329ece82-bbbd-4dbc-b596-73e0ba94a91d",
+      "name": "Switch1"
+    },
+    {
+      "parameters": {
+        "resource": "databasePage",
+        "operation": "update",
+        "pageId": {
+          "__rl": true,
+          "value": "={{ $json.id }}",
+          "mode": "id"
+        },
+        "propertiesUi": {
+          "propertyValues": [
+            {
+              "key": "Status|select",
+              "selectValue": "Review"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.notion",
+      "typeVersion": 2.2,
+      "position": [
+        1248,
+        1312
+      ],
+      "id": "9d838f6e-1b80-4888-ae88-85112e6ed982",
+      "name": "Update a database page1",
+      "credentials": {
+        "notionApi": {
+          "id": "Le14daOJ7uGb7rMb",
+          "name": "MK Private"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForEachItem",
+        "jsCode": "const maxWeek = $input.first().json.property_week_number || 0;\n\nreturn {\n  weekNumber: maxWeek + 1\n};"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        0,
+        1840
+      ],
+      "id": "298ac416-aa85-4a55-8236-7f0eb577e5ff",
+      "name": "Calculate Week",
+      "disabled": true
+    },
+    {
+      "parameters": {
+        "resource": "databasePage",
+        "operation": "getAll",
+        "databaseId": {
+          "__rl": true,
+          "value": "e04e1510-ec9c-47eb-9923-8ec68d1dd89c",
+          "mode": "list",
+          "cachedResultName": "Artists",
+          "cachedResultUrl": "https://www.notion.so/e04e1510ec9c47eb99238ec68d1dd89c"
+        },
+        "limit": 1,
+        "filterType": "manual",
+        "filters": {
+          "conditions": [
+            {
+              "key": "Status|select",
+              "condition": "equals",
+              "selectValue": "Current"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.notion",
+      "typeVersion": 2.2,
+      "position": [
+        1024,
+        416
+      ],
+      "id": "156e5681-9739-4487-828b-2721c9308a1a",
+      "name": "Get many database pages4",
+      "alwaysOutputData": true,
+      "credentials": {
+        "notionApi": {
+          "id": "Le14daOJ7uGb7rMb",
+          "name": "MK Private"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "databasePage",
+        "operation": "update",
+        "pageId": {
+          "__rl": true,
+          "value": "={{ $('Get many database pages4').item.json.id }}",
+          "mode": "id"
+        },
+        "propertiesUi": {
+          "propertyValues": [
+            {
+              "key": "Rating|select",
+              "selectValue": "={{ $json.data.Rating }}"
+            },
+            {
+              "key": "Status|select",
+              "selectValue": "Completed"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.notion",
+      "typeVersion": 2.2,
+      "position": [
+        1696,
+        320
+      ],
+      "id": "18a1b3b7-761c-4b89-a27e-93691092c98d",
+      "name": "Update a database page2",
+      "credentials": {
+        "notionApi": {
+          "id": "Le14daOJ7uGb7rMb",
+          "name": "MK Private"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "sendAndWait",
+        "chatId": "={{ $('Telegram Trigger').item.json.message.chat.id }}",
+        "message": "=How many ⭐ do you give  {{ $json.name }}?",
+        "responseType": "customForm",
+        "formFields": {
+          "values": [
+            {
+              "fieldLabel": "Rating",
+              "fieldType": "dropdown",
+              "fieldOptions": {
+                "values": [
+                  {
+                    "option": "⭐"
+                  },
+                  {
+                    "option": "⭐⭐"
+                  },
+                  {
+                    "option": "⭐⭐⭐"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "options": {
+          "responseFormButtonLabel": "Submit"
+        }
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        1472,
+        320
+      ],
+      "id": "0e9d8879-f005-4377-b437-c055483767e4",
+      "name": "Send message and wait for response1",
+      "webhookId": "3da6627a-f6ea-4536-b1ab-a829afc90f6f",
+      "credentials": {
+        "telegramApi": {
+          "id": "2qisne1lvc71iQ7u",
+          "name": "MT Mixtape Bot"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "chatId": "={{ $('Telegram Trigger').item.json.message.chat.id }}",
+        "text": "Awesome. Click /next to pick the next artist!",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        2032,
+        320
+      ],
+      "id": "30dd7bc1-b525-4ade-9604-cb832a67a96c",
+      "name": "Send a text message2",
+      "webhookId": "c51eec83-7cde-494e-842c-49d611576a8e",
+      "credentials": {
+        "telegramApi": {
+          "id": "2qisne1lvc71iQ7u",
+          "name": "MT Mixtape Bot"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "loose",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "dc7d6c6f-0d4f-4419-9ffd-be8e240d5949",
+              "leftValue": "={{ Boolean($('Get many database pages4').first().json.id) }}",
+              "rightValue": {},
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "looseTypeValidation": true,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        1248,
+        416
+      ],
+      "id": "41f1e642-d05f-48af-9af9-4b5d191c0316",
+      "name": "If1"
+    },
+    {
+      "parameters": {
+        "chatId": "={{ $('Telegram Trigger').item.json.message.chat.id }}",
+        "text": "There are no current artists to review. Click /next to pick one!",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        1472,
+        512
+      ],
+      "id": "e655b869-de15-4121-a2d7-2c361211d2d5",
+      "name": "Send a text message3",
+      "webhookId": "12d49775-8791-4409-9991-0e7cc783a637",
+      "credentials": {
+        "telegramApi": {
+          "id": "2qisne1lvc71iQ7u",
+          "name": "MT Mixtape Bot"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "=Extract song and artist from this message.\n\nUser message: {{ $('Telegram Trigger').item.json.message.text }}\n\nThe user may provide:\n- Song only: \"Crazy in Love\"\n- Song + artist: \"Crazy in Love by Beyoncé\"\n- Natural language with misspellings: \"crazy in love beyoncey\"\n- With submitter: \"Bohemian Rhapsody from Sarah\"\n\nRespond in EXACT JSON format (no markdown):\n{\n  \"search_query\": \"optimized Spotify search (song + artist)\"\n}\n\nExamples:\n- \"/song Crazy in Love by Beyoncé\" → search_query: \"Crazy in Love Beyoncé\"\n- \"/song bohemian rhapsody\" → search_query: \"Bohemian Rhapsody\"\n\nRemove \"/song\" prefix.",
+        "hasOutputParser": true,
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 2.2,
+      "position": [
+        672,
+        912
+      ],
+      "id": "baca1c22-c030-4d50-92aa-836c99a5deb0",
+      "name": "AI Agent1"
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "mode": "list",
+          "value": "gpt-4.1-mini"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        688,
+        1136
+      ],
+      "id": "31c43100-355a-4d80-8f87-25bcc7345bf5",
+      "name": "OpenAI Chat Model1",
+      "credentials": {
+        "openAiApi": {
+          "id": "hLGZwWWhfKyonDmV",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsonSchemaExample": "{\n  \"search_query\": \"Crazy in Love Beyoncé\"\n}"
+      },
+      "type": "@n8n/n8n-nodes-langchain.outputParserStructured",
+      "typeVersion": 1.3,
+      "position": [
+        816,
+        1136
+      ],
+      "id": "f779d0fb-6af8-49ee-92d8-1b9e0896824c",
+      "name": "Structured Output Parser1"
+    },
+    {
+      "parameters": {
+        "resource": "track",
+        "operation": "search",
+        "query": "={{ $json.output.search_query }}",
+        "limit": 1,
+        "filters": {}
+      },
+      "type": "n8n-nodes-base.spotify",
+      "typeVersion": 1,
+      "position": [
+        1024,
+        912
+      ],
+      "id": "31706caa-74b8-4297-95d4-f202aee92424",
+      "name": "Search tracks by keyword",
+      "credentials": {
+        "spotifyOAuth2Api": {
+          "id": "ko6LYNjYn2sudxCC",
+          "name": "Spotify account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "playlist",
+        "id": "4Gsylch9qluDpWdPN16Hvt",
+        "trackID": "={{ $json.uri }}",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.spotify",
+      "typeVersion": 1,
+      "position": [
+        1248,
+        912
+      ],
+      "id": "7402f692-bc94-4d29-9699-99e0b717d399",
+      "name": "Add an Item to a playlist",
+      "credentials": {
+        "spotifyOAuth2Api": {
+          "id": "ko6LYNjYn2sudxCC",
+          "name": "Spotify account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "sendAndWait",
+        "chatId": "={{ $('Telegram Trigger').item.json.message.chat.id }}",
+        "message": "=Great! {{ $('Search tracks by keyword').item.json.name }} by {{ $('Search tracks by keyword').item.json.album.artists[0].name }} is added to MT Mixtape. 🕺\n\nWould you like to add {{ $('Search tracks by keyword').item.json.album.artists[0].name }} to the Artist list as well?",
+        "approvalOptions": {
+          "values": {
+            "approvalType": "double",
+            "approveLabel": "✅ Yes",
+            "disapproveLabel": "❌ No"
+          }
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        1472,
+        912
+      ],
+      "id": "78639bcd-8764-447d-88d2-b46dba69b469",
+      "name": "Send message and wait for response2",
+      "webhookId": "5da47d00-c13a-4d6c-b83e-bfd97ede9e4b",
+      "credentials": {
+        "telegramApi": {
+          "id": "2qisne1lvc71iQ7u",
+          "name": "MT Mixtape Bot"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{ $json.data.approved }}",
+                    "rightValue": "",
+                    "operator": {
+                      "type": "boolean",
+                      "operation": "true",
+                      "singleValue": true
+                    },
+                    "id": "070f9302-2c3d-4031-842e-d798e1599602"
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Add artist"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "c601861b-d800-42aa-b72c-ad6087b50d14",
+                    "leftValue": "={{ $json.data.approved }}",
+                    "rightValue": "",
+                    "operator": {
+                      "type": "boolean",
+                      "operation": "false",
+                      "singleValue": true
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Don't add artist"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.2,
+      "position": [
+        1696,
+        912
+      ],
+      "id": "c0790efa-b3ac-4fc1-a944-6df0d399591d",
+      "name": "Switch2"
+    },
+    {
+      "parameters": {
+        "chatId": "={{ $('Telegram Trigger').item.json.message.chat.id }}",
+        "text": "Ok, I'll skip adding. Happy listening!",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        2032,
+        1120
+      ],
+      "id": "5c87b8f2-25e0-4252-8df3-ea0875882b0d",
+      "name": "Send a text message4",
+      "webhookId": "671631d9-26d4-4925-bc08-5407966114ce",
+      "credentials": {
+        "telegramApi": {
+          "id": "2qisne1lvc71iQ7u",
+          "name": "MT Mixtape Bot"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "=You are a music expert helping build a music discovery database. Extract the artist name from the user's message and provide essential information.\n\nSong name: {{ $('Search tracks by keyword').item.json.album.artists[0].name }}\n\nUser message: {{ $('Telegram Trigger').item.json.message.text }}\n\nIMPORTANT: \n- The user may misspell artist names. Use your knowledge to find the most likely correct artist.\n- Look for phrases like \"shared by X\", \"suggested by Y\", \"from Z\", \"recommended by W\", submitted by \"V\" to figure out the submitted_by field. extract that person's name if present.\n- If no submitter is mentioned, return null for submitted_by.\n- Remove command prefixes like \"/add\" from extraction.\n\nRespond in this EXACT JSON format (no markdown, no ```json blocks, just raw JSON):\n{\n  \"artist_name\": \"Correctly spelled artist name\",\n  \"summary\": \"2-3 sentence overview of who they are and why they matter in music history\",\n  \"key_songs\": \"Song 1 (context), Song 2 (context), Song 3 (context)\",\n  \"genres\": [\"Primary Genre\", \"Secondary Genre\"],\n  \"submitted_by\": \"Extracted name if mentioned, or null if not mentioned\"\n}\n\nExamples:\n- \"/add Joni Mitchell, shared by MJ mum\" → submitted_by: \"MJ mum\"\n- \"/add The Beatles from Sarah\" → submitted_by: \"Sarah\"  \n- \"/add Radiohead suggested by Tom\" → submitted_by: \"Tom\"\n- \"/add Miles Davis\" → submitted_by: null\n\nRules:\n- Be forgiving with spelling\n- Focus on cultural significance\n- Keep it accessible and concise",
+        "hasOutputParser": true,
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 2.2,
+      "position": [
+        1920,
+        512
+      ],
+      "id": "7e397e45-aa1e-4f1f-b2ff-f25ee10348cc",
+      "name": "AI Agent2"
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "mode": "list",
+          "value": "gpt-4.1-mini"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        2000,
+        944
+      ],
+      "id": "030c7a79-baa2-4600-b0ed-f2b7a30c506f",
+      "name": "OpenAI Chat Model3",
+      "credentials": {
+        "openAiApi": {
+          "id": "hLGZwWWhfKyonDmV",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "databasePage",
+        "databaseId": {
+          "__rl": true,
+          "value": "e04e1510-ec9c-47eb-9923-8ec68d1dd89c",
+          "mode": "list",
+          "cachedResultName": "Artists",
+          "cachedResultUrl": "https://www.notion.so/e04e1510ec9c47eb99238ec68d1dd89c"
+        },
+        "propertiesUi": {
+          "propertyValues": [
+            {
+              "key": "Artist Name|title",
+              "title": "={{ $('AI Agent2').item.json.output.artist_name }}"
+            },
+            {
+              "key": "Genre|multi_select",
+              "multiSelectValue": "={{ $('AI Agent2').item.json.output.genres }}"
+            },
+            {
+              "key": "Key Songs|rich_text",
+              "textContent": "={{ $('AI Agent2').item.json.output.key_songs }}"
+            },
+            {
+              "key": "Summary|rich_text",
+              "textContent": "={{ $('AI Agent2').item.json.output.summary }}"
+            },
+            {
+              "key": "Submitted By|rich_text",
+              "textContent": "={{ $('Search tracks by keyword').item.json.name }} - {{ $('Search tracks by keyword').item.json.external_urls.spotify }} (by {{ $('Telegram Trigger').item.json.message.from.first_name }})"
+            },
+            {
+              "key": "Submitted By|rich_text",
+              "textContent": "={{ $json.submitted_by || $('Telegram Trigger').item.json.message.from.first_name }}"
+            },
+            {
+              "key": "Featured Song|url",
+              "urlValue": "={{ $('Search tracks by keyword').item.json.external_urls.spotify }}"
+            },
+            {
+              "key": "Status|select",
+              "selectValue": "Queue"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.notion",
+      "typeVersion": 2.2,
+      "position": [
+        2816,
+        912
+      ],
+      "id": "e7d628bb-26b9-40b8-ae72-0c78dc54b39a",
+      "name": "Create a database page1",
+      "credentials": {
+        "notionApi": {
+          "id": "Le14daOJ7uGb7rMb",
+          "name": "MK Private"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "databasePage",
+        "operation": "getAll",
+        "databaseId": {
+          "__rl": true,
+          "value": "e04e1510-ec9c-47eb-9923-8ec68d1dd89c",
+          "mode": "list",
+          "cachedResultName": "Artists",
+          "cachedResultUrl": "https://www.notion.so/e04e1510ec9c47eb99238ec68d1dd89c"
+        },
+        "limit": 1,
+        "filterType": "manual",
+        "filters": {
+          "conditions": [
+            {
+              "key": "Artist Name|title",
+              "condition": "equals",
+              "titleValue": "={{ $json.output.artist_name }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.notion",
+      "typeVersion": 2.2,
+      "position": [
+        2368,
+        720
+      ],
+      "id": "3ba7891d-80e5-481d-901e-a965c2cb5de0",
+      "name": "Get many database pages5",
+      "alwaysOutputData": true,
+      "credentials": {
+        "notionApi": {
+          "id": "Le14daOJ7uGb7rMb",
+          "name": "MK Private"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "loose",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "dc7d6c6f-0d4f-4419-9ffd-be8e240d5949",
+              "leftValue": "={{ Boolean($('Get many database pages5').first().json.id) }}",
+              "rightValue": {},
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "looseTypeValidation": true,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        2592,
+        720
+      ],
+      "id": "470df663-db46-4983-85f5-6af21a973ef1",
+      "name": "If2"
+    },
+    {
+      "parameters": {
+        "chatId": "={{ $('Telegram Trigger').item.json.message.chat.id }}",
+        "text": "Already exists! 🫤|💃 Full artist list [here](https://cangrejo-illegal.notion.site/MT-Mixtape-Collection-4bb1a87900634fdfbacaf97fe4e999ed)",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        3040,
+        624
+      ],
+      "id": "19a50ca8-36ec-478f-9ceb-4c2cb6998357",
+      "name": "Send a text message5",
+      "webhookId": "55f5a75d-7bd1-44fb-b902-052a34679d29",
+      "credentials": {
+        "telegramApi": {
+          "id": "2qisne1lvc71iQ7u",
+          "name": "MT Mixtape Bot"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "chatId": "={{ $('Telegram Trigger').item.json.message.chat.id }}",
+        "text": "={{ $json.name }} added to Artists!✅",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        3040,
+        912
+      ],
+      "id": "f581211b-8080-4fae-a270-d17238d24ed6",
+      "name": "Send a text message6",
+      "webhookId": "4a76ca53-e61a-412a-bda5-94b9f355e956",
+      "credentials": {
+        "telegramApi": {
+          "id": "2qisne1lvc71iQ7u",
+          "name": "MT Mixtape Bot"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsonSchemaExample": "{\n  \"artist_name\": \"Joni Mitchell\",\n  \"summary\": \"Canadian singer-songwriter who revolutionized folk music in the 1960s-70s with poetic lyrics and innovative guitar tunings. Known for confessional songwriting style and albums like Blue and Court and the Spark. Influenced generations of artists across multiple genres.\",\n  \"key_songs\": \"Big Yellow Taxi (environmental anthem, 1970), A Case of You (intimate love song from Blue, 1971), Both Sides Now (reflective masterpiece covered by hundreds of artists, 1969)\",\n  \"genres\": [\"Folk\", \"Singer-Songwriter\", \"Jazz\"],\n  \"submitted_by\": null\n}",
+        "autoFix": true
+      },
+      "type": "@n8n/n8n-nodes-langchain.outputParserStructured",
+      "typeVersion": 1.3,
+      "position": [
+        2000,
+        736
+      ],
+      "id": "46ee0e65-a08f-4899-8b4e-30879cf1bd22",
+      "name": "Structured Output Parser3"
+    },
+    {
+      "parameters": {
+        "resource": "databasePage",
+        "operation": "getAll",
+        "databaseId": {
+          "__rl": true,
+          "value": "e04e1510-ec9c-47eb-9923-8ec68d1dd89c",
+          "mode": "list",
+          "cachedResultName": "Artists",
+          "cachedResultUrl": "https://www.notion.so/e04e1510ec9c47eb99238ec68d1dd89c"
+        },
+        "returnAll": true,
+        "filterType": "manual",
+        "filters": {
+          "conditions": [
+            {
+              "key": "Status|select",
+              "condition": "equals",
+              "selectValue": "Completed"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.notion",
+      "typeVersion": 2.2,
+      "position": [
+        736,
+        1616
+      ],
+      "id": "b7102091-e863-4ab3-bb92-cedf730c0017",
+      "name": "Get Completed",
+      "alwaysOutputData": true,
+      "credentials": {
+        "notionApi": {
+          "id": "Le14daOJ7uGb7rMb",
+          "name": "MK Private"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "databasePage",
+        "operation": "getAll",
+        "databaseId": {
+          "__rl": true,
+          "value": "e04e1510-ec9c-47eb-9923-8ec68d1dd89c",
+          "mode": "list",
+          "cachedResultName": "Artists",
+          "cachedResultUrl": "https://www.notion.so/e04e1510ec9c47eb99238ec68d1dd89c"
+        },
+        "returnAll": true,
+        "filterType": "manual",
+        "filters": {
+          "conditions": [
+            {
+              "key": "Status|select",
+              "condition": "equals",
+              "selectValue": "Queue"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.notion",
+      "typeVersion": 2.2,
+      "position": [
+        1024,
+        1616
+      ],
+      "id": "a1c723e3-18ae-447b-8800-2cc13acd629f",
+      "name": "Get Queued",
+      "alwaysOutputData": true,
+      "credentials": {
+        "notionApi": {
+          "id": "Le14daOJ7uGb7rMb",
+          "name": "MK Private"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const completed = $('Get Completed').all();\nconst queue = $('Get Queued').all();\n\n// --- Calculate average rating ---\nlet totalRating = 0;\nlet ratedCount = 0;\nlet maxRating = 0;\nconst topRatedArtists = [];\n\nfor (const artist of completed) {\n  const rating = artist.json.property_rating;\n  if (rating) {\n    const stars = (rating.match(/⭐/g) || []).length;\n    totalRating += stars;\n    ratedCount++;\n\n    if (stars > maxRating) {\n      maxRating = stars;\n    }\n  }\n}\n\n// --- Collect all artists with highest rating ---\nfor (const artist of completed) {\n  const rating = artist.json.property_rating;\n  if (rating) {\n    const stars = (rating.match(/⭐/g) || []).length;\n    if (stars === maxRating && maxRating > 0) {\n      topRatedArtists.push(artist.json.property_artist_name);\n    }\n  }\n}\n\nconst avgRating = ratedCount > 0 ? (totalRating / ratedCount).toFixed(1) : 0;\n\n// --- Collect genres and frequency ---\nconst genreCount = {};\nconst uniqueGenres = [];\n\nfor (const artist of completed) {\n  const genres = artist.json.property_genre;\n  if (Array.isArray(genres)) {\n    for (const g of genres) {\n      if (!uniqueGenres.includes(g)) uniqueGenres.push(g);\n      genreCount[g] = (genreCount[g] || 0) + 1;\n    }\n  }\n}\n\n// --- Determine most common genre(s) ---\nlet mostCommonGenres = [];\nlet maxCount = 0;\n\nfor (const [genre, count] of Object.entries(genreCount)) {\n  if (count > maxCount) {\n    mostCommonGenres = [genre];\n    maxCount = count;\n  } else if (count === maxCount) {\n    mostCommonGenres.push(genre);\n  }\n}\n\n// --- Output summary ---\nreturn {\n  completed_count: completed.length,\n  queue_count: queue.length,\n  total_artists: completed.length + queue.length,\n  average_rating: avgRating,\n  genres_explored: uniqueGenres.length,\n  genres_list: uniqueGenres.join(', '),\n  most_common_genres: mostCommonGenres.join(', ') || 'N/A',\n  most_common_genre_count: maxCount,\n  highest_rating: maxRating || 'N/A',\n  highest_rated_artists: topRatedArtists.length > 0 ? topRatedArtists.join(', ') : 'N/A'\n};\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1248,
+        1616
+      ],
+      "id": "ae228fc6-78b1-4357-bfbf-18cbafd911eb",
+      "name": "Analyze Completed and Queued"
+    },
+    {
+      "parameters": {
+        "chatId": "={{ $('Telegram Trigger').first().json.message.chat.id }}",
+        "text": "=📊 MT Mixtape Stats\n\n🎵 Total Artists: {{ $json.total_artists }}\n✅ Completed: {{ $json.completed_count }} weeks\n⏳ In Queue: {{ $json.queue_count }}\n⭐ Average Rating: {{ $json.average_rating }}/3  \n🏆 Highest Rated: {{ $json.highest_rated_artists }} ({{ $json.highest_rating }}⭐)\n🎨 Genres Explored: {{ $json.genres_explored }}  \n🧩 Explored Genres: {{ $json.genres_list }}\n🔥 Most Frequent: {{ $json.most_common_genres }} ({{ $json.most_common_genre_count }}×)\n\n💃 Full artist list [here](https://cangrejo-illegal.notion.site/MT-Mixtape-Collection-4bb1a87900634fdfbacaf97fe4e999ed)\n\nKeep discovering music for Mētra! 🎶\n",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        1472,
+        1616
+      ],
+      "id": "0f8ddc26-15bc-4269-8b30-98bd2551b2b4",
+      "name": "Send a text message7",
+      "webhookId": "019f299c-1a99-4434-b069-ea0c0926b11d",
+      "credentials": {
+        "telegramApi": {
+          "id": "2qisne1lvc71iQ7u",
+          "name": "MT Mixtape Bot"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "chatId": "={{ $('Telegram Trigger').item.json.message.chat.id }}",
+        "text": "=You're on with  {{ $json.name }}! Happy listening. 🕺",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        2368,
+        1376
+      ],
+      "id": "b0a7c17c-0ca0-4665-8ed8-1e1d6bb360ba",
+      "name": "Send a text message8",
+      "webhookId": "4a76ca53-e61a-412a-bda5-94b9f355e956",
+      "credentials": {
+        "telegramApi": {
+          "id": "2qisne1lvc71iQ7u",
+          "name": "MT Mixtape Bot"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "databasePage",
+        "operation": "update",
+        "pageId": {
+          "__rl": true,
+          "value": "={{ $('Update a database page1').item.json.id }}",
+          "mode": "id"
+        },
+        "propertiesUi": {
+          "propertyValues": [
+            {
+              "key": "Status|select",
+              "selectValue": "Current"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.notion",
+      "typeVersion": 2.2,
+      "position": [
+        2032,
+        1376
+      ],
+      "id": "228a8742-43a1-4458-918d-f4eb6fab2529",
+      "name": "Update a database page3",
+      "credentials": {
+        "notionApi": {
+          "id": "Le14daOJ7uGb7rMb",
+          "name": "MK Private"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "databasePage",
+        "operation": "getAll",
+        "databaseId": {
+          "__rl": true,
+          "value": "e04e1510-ec9c-47eb-9923-8ec68d1dd89c",
+          "mode": "list",
+          "cachedResultName": "Artists",
+          "cachedResultUrl": "https://www.notion.so/e04e1510ec9c47eb99238ec68d1dd89c"
+        },
+        "returnAll": true,
+        "filterType": "manual",
+        "filters": {
+          "conditions": [
+            {
+              "key": "Status|select",
+              "condition": "equals",
+              "selectValue": "Review"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.notion",
+      "typeVersion": 2.2,
+      "position": [
+        2592,
+        1376
+      ],
+      "id": "3c2335b4-37b4-48f4-b5af-0644b5a1ccea",
+      "name": "Get many database pages2",
+      "credentials": {
+        "notionApi": {
+          "id": "Le14daOJ7uGb7rMb",
+          "name": "MK Private"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "databasePage",
+        "operation": "update",
+        "pageId": {
+          "__rl": true,
+          "value": "={{ $json.id }}",
+          "mode": "id"
+        },
+        "propertiesUi": {
+          "propertyValues": [
+            {
+              "key": "Status|select",
+              "selectValue": "Queue"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.notion",
+      "typeVersion": 2.2,
+      "position": [
+        2816,
+        1376
+      ],
+      "id": "e77a87c8-3125-4bc2-a4a1-dce44efe6a32",
+      "name": "Update a database page",
+      "credentials": {
+        "notionApi": {
+          "id": "Le14daOJ7uGb7rMb",
+          "name": "MK Private"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "databasePage",
+        "operation": "update",
+        "pageId": {
+          "__rl": true,
+          "value": "={{ $json.id }}",
+          "mode": "id"
+        },
+        "propertiesUi": {
+          "propertyValues": [
+            {
+              "key": "Featured Song|url",
+              "urlValue": "={{ $('Search tracks by keyword').item.json.external_urls.spotify }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.notion",
+      "typeVersion": 2.2,
+      "position": [
+        2816,
+        624
+      ],
+      "id": "98a16e93-7f17-4054-ab8d-a5892ab2a9c5",
+      "name": "Update a database page4",
+      "credentials": {
+        "notionApi": {
+          "id": "Le14daOJ7uGb7rMb",
+          "name": "MK Private"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "loose",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "1010f805-b522-49d8-8c22-876f7bf9f879",
+              "leftValue": "={{ $json.message.from.id }}",
+              "rightValue": "287386233",
+              "operator": {
+                "type": "string",
+                "operation": "equals",
+                "name": "filter.operator.equals"
+              }
+            },
+            {
+              "id": "ec499c7b-8087-4c07-83b5-b8e5e947fe76",
+              "leftValue": "={{ $json.message.from.id }}",
+              "rightValue": "194884321",
+              "operator": {
+                "type": "string",
+                "operation": "equals",
+                "name": "filter.operator.equals"
+              }
+            }
+          ],
+          "combinator": "or"
+        },
+        "looseTypeValidation": "={{ true }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.filter",
+      "typeVersion": 2.2,
+      "position": [
+        736,
+        1376
+      ],
+      "id": "1e4a3530-1de1-461b-a284-dde9ef57084c",
+      "name": "Filter1"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "loose",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "1010f805-b522-49d8-8c22-876f7bf9f879",
+              "leftValue": "={{ $json.message.from.id }}",
+              "rightValue": "287386233",
+              "operator": {
+                "type": "string",
+                "operation": "equals",
+                "name": "filter.operator.equals"
+              }
+            },
+            {
+              "id": "ec499c7b-8087-4c07-83b5-b8e5e947fe76",
+              "leftValue": "={{ $json.message.from.id }}",
+              "rightValue": "194884321",
+              "operator": {
+                "type": "string",
+                "operation": "equals",
+                "name": "filter.operator.equals"
+              }
+            }
+          ],
+          "combinator": "or"
+        },
+        "looseTypeValidation": "={{ true }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.filter",
+      "typeVersion": 2.2,
+      "position": [
+        736,
+        416
+      ],
+      "id": "6d9ffc29-9b92-4923-9756-0cf37725d499",
+      "name": "Filter2"
+    }
+  ],
+  "repo_name": "n8n",
+  "repo_owner": "dienvidupaprika",
+  "repo_path": "library/",
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "shared": [
+    {
+      "createdAt": "2025-10-07T08:29:23.115Z",
+      "updatedAt": "2025-10-07T08:29:23.115Z",
+      "role": "workflow:owner",
+      "workflowId": "bSumYuqwHlxucP5e",
+      "projectId": "W3UrxxBKEvhHz6rV"
+    }
+  ],
+  "staticData": null,
+  "tags": [],
+  "triggerCount": 1,
+  "updatedAt": "2025-10-23T09:01:28.000Z",
+  "versionId": "4a64d524-bda7-4673-aabe-f310d6f36ced"
+}
